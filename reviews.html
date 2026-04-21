@@ -3,9 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reviews</title>
+    <title>Reviews - Beauty Bytes Unfiltered</title>
 </head>
 <body>
+    <header>
+        <nav>
+            <a href="home.html">Home</a> |
+            <a href="about.html">About Us</a> |
+            <a href="booking.html">Booking</a> |
+            <a href="promotions.html">Promotions</a> |
+            <a href="reviews.html" class="active">Reviews</a> |
+            <a href="services.html">Services</a> |
+            <a href="contact.html">Contacts</a>
+        </nav>
+        <h1>Client Reviews</h1>
+    </header>
     
+    <main>
+        <section id="client-reviews">
+            <h2>What Our Clients Say</h2>
+            <article>
+                <h3>Kamogelo Mogapi</h3>
+                <p>"I had an amazing experience at Beauty Bytes Unfiltered! The staff was friendly and professional, and my hair and makeup turned out fantastic. I will definitely be coming back!"</p>
+            </article>
+            <article>
+                <h3>John Ralothaka</h3>
+                <p>"The massage therapy at Beauty Bytes Unfiltered is top-notch. I felt completely relaxed and rejuvenated after my session. Highly recommend!"</p>
+            </article>
+            <article>
+                <h3>Lethabo Motsumi</h3>
+                <p>"I recently got my facials at Beauty Bytes Unfiltered and my skin is GLOWING!
+            </article>
+        </section>
+        <section id="submit-review">
+            <h2>Submit Your Review</h2>
+            <form action="submit_review.html" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="rating">Client Ratings:</label>
+                <select id="rating" name="rating" required>
+                    <option value="">--Please choose a rating--</option>
+                    <option value="5">5 Stars - Excellent</option>
+                    <option value="4">4 Stars - Very Good</option>
+                    <option value="3">3 Stars - Good</option>
+                    <option value="2">2 Stars - Fair</option>
+                    <option value="1">1 Star - Poor</option>
+                <select id="service" name="service" required>
+                    <option value="">--Please choose an option--</option>
+                    <option value="hair">Hair Braiding</option>
+                    <option value="makeup">Makeup</option>
+                    <option value="wig">Wig Installation and Styling</option>
+                    <option value="manicure">Manicure</option>
+                    <option value="pedicure">Pedicure</option>
+                    <option value="facial">Facial Treatments</option>
+                    <option value="massage">Massage Therapy</option>
+                </select>
+
+                <label for="review">Your Review:</label>
+                <textarea id="review" name="review" rows="4" required></textarea>
+
+                <button type="submit">Submit Review</button>
+            </form>
+            </section>
+
+            <aside>
+                <h2>Importance of Reviews</h2>
+                <p>We really value client feedback and if there is anything we can improve on,
+                    we are happy to do it. Our clients are entitled to the best customer service.</p>
+            </aside>
+            </main>
+
+            <footer>
+                <p>&copy; 2026 Beauty Bytes Unfiltered</p>
+            </footer>
+
 </body>
 </html>
