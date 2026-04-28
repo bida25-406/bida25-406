@@ -1,0 +1,219 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global body */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header + Navigation */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8c6d0; /* soft pink */
+  padding: 10px 20px;
+}
+
+header h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+navbar {
+  display: flex;
+  justify-content: spacebar-betweeen;
+  align-items: center;
+  padding: 15px 30px;
+}
+nav-links {
+  list-style: none;
+  display:flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+nav-links a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+header nav a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: #c0392b; 
+}
+
+/* Page sections */
+section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Headings */
+h1, h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #c0392b;
+}
+
+/* Promotions grid */
+.promotions .promo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.promo-box {
+  background-color: #fdfdfd;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.promo-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.promo-box img {
+  max-width: 100px;
+  margin-bottom: 15px;
+}
+
+/* Booking form */
+.booking form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.booking input, .booking textarea, .booking select {
+  width:100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.booking button {
+  background-color: #c0392b;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.booking button:hover {
+  background-color: #a93226;
+}
+
+/* Reviews */
+.reviews .review-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  background-color: #fafafa;
+}
+
+/* Contacts */
+.contacts {
+  text-align: center;
+}
+
+.contacts p {
+  margin: 10px 0;
+}
+
+/*About us*/
+
+#founder, #team {
+  margin:40px auto;
+  max-width: 900px;
+  text-align: center;
+}
+.founder-profile {
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  gap: 20px;
+}
+.founder-profile img{
+  width: 150px;
+  border-radius: 50%
+}
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.team-member {
+  width: 250px;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+}
+.team-member img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/*Services*/
+body {
+  font-family: 'Helvetica neue',sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+
+}
+h1,h2 {
+  text-align: center;
+  margin-top: 30px;
+}
+.price {
+  font-weight: bold;
+  color: #b88c8c;
+}
+
+image-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}  
+
+image-container img {
+  width: 100%;
+  border-radius: 10px;
+  height: auto;
+}
+
+footer {
+  background-color: #f8c6d0;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+  color: #333;
+}

@@ -8,69 +8,47 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="navbar">
+            <div class="logo">Beauty Bytes Unfiltered</div>
+
+            <div class="nav links">
         <a href="index.html">Home</a> |
         <a href="about.html">About Us</a> |
         <a href="booking.html" class="active">Booking</a> |
         <a href="promotions.html">Promotions</a> |
         <a href="reviews.html">Reviews</a> |
         <a href="services.html">Services</a> |
-        <a href="contact.html">Contacts</a> |  
+        <a href="contact.html">Contacts</a> |
+            </div>  
         </nav>
-        <h1>BOOK YOUR APPOINTMENT;)</h1>
     </header>
     <main>
+        <section id="heading">
+            <h1>BOOK YOUR APPOINTMENT;)</h1>
+        </section>
         <section id="booking-form">
+            <div class="booking-form">
             <h2>Fill In Your Details</h2>
-            <form action="confirmation.html" method="post">
-                <fieldset>
-                    <legend>Select Your Service</legend>
-                    <label for="service">Choose a service:</label>
-                    <select id="service" name="service" required>
-                        <option value="">--Please choose an option--</option>
-                        <option value="hair">Hair Braiding</option>
-                        <option value="makeup">Makeup</option>
-                        <option value="wig">Wig Installation and Styling</option>
-                        <option value="manicure">Manivure</option>
-                        <option value="pedicure">Pedicure</option>
-                        <option value="facial">Facial Treatments</option>
-                        <option value="massage">Massage Therapy</option>
-                        </select>
-                        </fieldset>
-                        <fieldset>
-                            <legend>Choose Your Date and Time</legend>
-                            <label for="date">Select a date:</label>
-                            <input type="date" id="date" name="date" required>
-                            <label for="time">Select a time:</label>
-                            <input type="time" id="time" name="time" required>
-
-                            <label for="stylist">Choose a stylist:</label>
-                            <select id="stylist" name="stylist" required>
-                                <option value="">--Please choose an option--</option>
-                                <option value="amber">Amber Kealotswe - Founder</option>
-                                <option value="talitha">Talitha Ramopedi - Hair Braider and Natural Haircare Specialist</option>
-                                <option value="aminah">Aminah Mosikari - Makeup Artist and Wig Stylist</option>
-                                <option value="elaine">Elaine Motsumi - Nail Technician</option>
-                                <option value="audrey">Audrey Smith - Massage Therapist</option>
-                                </select>
-                                </fieldset>
-
-                                <fieldset>
-                                    <legend>Contact Information</legend>
-                                    <label for="name">Full Name:</label>
-                                    <input type="text" id="name" name="name" required>
-                                    <label for="email">Email Address:</label>
-                                    <input type="email" id="email" name="email" required>
-                                    <label for="phone">Phone Number:</label>
-                                    <input type="tel" id="phone" name="phone" required>
-                                </fieldset>
-                                <fieldset>
-                                    <legend>Additional Information</legend>
-                                    <label for="notes">Any special requests or notes:</label>
-                                    <textarea id="notes" name="notes" rows="4" cols="5></textarea>
-                                </fieldset>
+            <form>
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <select>
+                    <option>Cornrows</option>
+                    <option>Knotless Braids</option>
+                    <option>Puff Gel</option>   
+                    <option>Natural Hair Wash [deep cleanse]</option>
+                    <option>Wig installation and styling</option>
+                    <option>Full Glam Makeup</option>
+                    <option>Soft Glam Makeup</option>
+                    <option>Manicure</option>
+                    <option>Pedicure</option>
+                    <option>Full Body Massage</option>
+                    <option>Half Body Massage</option>
+                </select>
                                 <button type="submit">Confirm Appointment</button>
                             </form>
+                        </div>
                         </section>
                     </main>
                     <footer>
