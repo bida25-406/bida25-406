@@ -194,15 +194,15 @@ h1,h2 {
 
 image-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(4,1fr);
+  gap: 15px;
   padding: 20px;
 }  
 
 image-container img {
   width: 100%;
-  border-radius: 10px;
   height: auto;
+  border-radius: 10px;
 }
 
 footer {
@@ -211,6 +211,13 @@ footer {
   padding: 15px;
   font-size: 0.9rem;
   color: #333;
+}
+body{
+  background-image: url("home-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; 
 }
 body.dark-mode { 
     background-color: #333333; 
@@ -235,3 +242,4 @@ body.dark-mode nav { background-color: #222222; }
     transition: background-color 0.3s; 
 } 
 #back-to-top:hover { background-color: #b88c8c; } 
+
