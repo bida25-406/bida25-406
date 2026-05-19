@@ -19,8 +19,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f8c6d0; /* soft pink */
+  background-color: #f8c6d0;
   padding: 10px 20px;
+}
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: #c0392b; 
 }
 
 header h1 {
@@ -192,19 +197,6 @@ h1,h2 {
   color: #b88c8c;
 }
 
-image-container {
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  gap: 15px;
-  padding: 20px;
-}  
-
-image-container img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
 footer {
   background-color: #f8c6d0;
   text-align: center;
@@ -242,4 +234,23 @@ body.dark-mode nav { background-color: #222222; }
     transition: background-color 0.3s; 
 } 
 #back-to-top:hover { background-color: #b88c8c; } 
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
 
