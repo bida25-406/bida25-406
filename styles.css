@@ -1,11 +1,9 @@
-/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Global body */
 body {
   font-family: 'Helvetica Neue', Arial, sans-serif;
   background-color: #fff;
@@ -14,7 +12,6 @@ body {
    transition: background-color 0.3s, color 0.3s;
 }
 
-/* Header + Navigation */
 header {
   display: flex;
   justify-content: space-between;
@@ -145,8 +142,6 @@ h1, h2 {
   margin: 10px 0;
 }
 
-/*About us*/
-
 #founder, #team {
   margin:40px auto;
   max-width: 900px;
@@ -179,7 +174,6 @@ h1, h2 {
   border-radius: 8px;
 }
 
-/*Services*/
 body {
   font-family: 'Helvetica neue',sans-serif;
   background: #f9f9f9;
@@ -251,6 +245,13 @@ body.dark-mode nav { background-color: #222222; }
 
 .gallery-grid img:hover {
   transform: scale(1.05);
+}
+
+body {
+  background-image: url("../background image.jpg");
+  background-size: cover;     
+  background-repeat: no-repeat;
+  background-position: center; 
 }
 
 
